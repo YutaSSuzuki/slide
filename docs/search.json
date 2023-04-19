@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "reading_circle2023_04.html#quarto",
+    "href": "reading_circle2023_04.html#quarto",
+    "title": "reading_circle",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see https://quarto.org/docs/presentations/."
+  },
+  {
+    "objectID": "reading_circle2023_04.html#bullets",
+    "href": "reading_circle2023_04.html#bullets",
+    "title": "reading_circle",
+    "section": "Bullets",
+    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
+  },
+  {
+    "objectID": "reading_circle2023_04.html#code",
+    "href": "reading_circle2023_04.html#code",
+    "title": "reading_circle",
+    "section": "Code",
+    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "slide",
+    "section": "",
+    "text": "test for slide page\nslide"
+  }
+]

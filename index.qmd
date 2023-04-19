@@ -1,0 +1,9 @@
+---
+title: "slide"
+---
+
+## test
+
+test for slide page
+
+[slide](reading_circle2023_04.qmd)
