@@ -7,3 +7,5 @@ title: "slide"
 test for slide page
 
 [slide](reading_circle2023_04.qmd)
+
+#https://yutassuzuki.github.io/slide/
