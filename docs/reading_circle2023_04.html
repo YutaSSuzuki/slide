@@ -409,7 +409,8 @@
 <li><p>アルゴリズムの最適化 <br></p></li>
 <li><p>並列化</p></li>
 </ul>
-<p>実行環境<br> 3 GHz 6コアIntel Core i5、メモリ:32G <a href="https://docs.python.org/3.10/">python3.10.10</a><br></p>
+<p>実行環境<br> 3 GHz 6コアIntel Core i5、メモリ:32G</p>
+<p><a href="https://docs.python.org/3.10/">python3.10.10</a><br></p>
 </section>
 <section id="組み込み関数を使おう" class="slide level2">
 <h2>組み込み関数を使おう</h2>
@@ -422,14 +423,14 @@
 <span id="cb1-5"><a href="#cb1-5"></a>    total <span class="op">+=</span> i</span>
 <span id="cb1-6"><a href="#cb1-6"></a>end_time <span class="op">=</span> time.time()</span>
 <span id="cb1-7"><a href="#cb1-7"></a><span class="bu">print</span>(<span class="st">"計算結果:"</span>,total,<span class="st">"</span><span class="ch">\n</span><span class="st">sumの処理時間: "</span>, end_time <span class="op">-</span> start_time)</span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#forループの処理時間: 8.668177366256714秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#処理時間: 8.668177366256714秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>組み込み関数（<a href="https://docs.python.org/ja/3.10/library/functions.html#sum">sum()</a>）の使用</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> time</span>
 <span id="cb2-2"><a href="#cb2-2"></a>start_time <span class="op">=</span> time.time()</span>
 <span id="cb2-3"><a href="#cb2-3"></a>total <span class="op">=</span> <span class="bu">sum</span>(<span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">100000001</span>)))</span>
 <span id="cb2-4"><a href="#cb2-4"></a>end_time <span class="op">=</span> time.time()</span>
 <span id="cb2-5"><a href="#cb2-5"></a><span class="bu">print</span>(<span class="st">"計算結果:"</span>,total,<span class="st">"</span><span class="ch">\n</span><span class="st">sumの処理時間: "</span>, end_time <span class="op">-</span> start_time)</span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#forループの処理時間:4.457662105560303秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#処理時間:4.457662105560303秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="外部モジュールを使おう" class="slide level2">
 <h2>外部モジュールを使おう</h2>
@@ -442,7 +443,7 @@
 <span id="cb3-4"><a href="#cb3-4"></a>total <span class="op">=</span> numpy.<span class="bu">sum</span>(numpy.arange(<span class="dv">1</span>,<span class="dv">100000001</span>))</span>
 <span id="cb3-5"><a href="#cb3-5"></a>end_time <span class="op">=</span> time.time()</span>
 <span id="cb3-6"><a href="#cb3-6"></a><span class="bu">print</span>(<span class="st">"計算結果:"</span>,total,<span class="st">"</span><span class="ch">\n</span><span class="st">numpyの処理時間: "</span>, end_time <span class="op">-</span> start_time)</span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="co">#forループの処理時間:0.5025210380554199秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="co">#処理時間:0.5025210380554199秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>実用例：RでCNSとSVの重なりを<a href="https://www.bioconductor.org/">biocoductor</a>で検出</p>
 </section>
 <section id="アルゴリズムを見直そう" class="slide level2">
@@ -460,7 +461,7 @@
 <span id="cb4-3"><a href="#cb4-3"></a>total <span class="op">=</span> <span class="bu">int</span>(<span class="dv">100000000</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span><span class="dv">100000000</span>)<span class="op">/</span><span class="dv">2</span>)</span>
 <span id="cb4-4"><a href="#cb4-4"></a>end_time <span class="op">=</span> time.time()</span>
 <span id="cb4-5"><a href="#cb4-5"></a><span class="bu">print</span>(<span class="st">"計算結果:"</span>,total,<span class="st">"</span><span class="ch">\n</span><span class="st">アルゴリズムの変更後の処理時間: "</span>, end_time <span class="op">-</span> start_time)</span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#forループの処理時間:1.1920928955078125e-06秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#処理時間:1.1920928955078125e-06秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="並列化をしよう" class="slide level2">
 <h2>並列化をしよう</h2>
@@ -489,7 +490,7 @@
 <span id="cb5-21"><a href="#cb5-21"></a>    total <span class="op">=</span> sum_cal.value</span>
 <span id="cb5-22"><a href="#cb5-22"></a>    end_time <span class="op">=</span> time.time()</span>
 <span id="cb5-23"><a href="#cb5-23"></a>    <span class="bu">print</span>(<span class="st">"計算結果:"</span>,total,<span class="st">"</span><span class="ch">\n</span><span class="st">並列化後の処理時間: "</span>, end_time <span class="op">-</span> start_time)</span>
-<span id="cb5-24"><a href="#cb5-24"></a><span class="co">#並列化後の処理時間:2.640056848526001秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-24"><a href="#cb5-24"></a><span class="co">#処理時間:2.640056848526001秒</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="注意点" class="slide level2">
 <h2>注意点</h2>
@@ -521,7 +522,7 @@
 <span id="cb7-12"><a href="#cb7-12"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Sum = "</span> <span class="op">&lt;&lt;</span> <span class="va">sum_</span> <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
 <span id="cb7-13"><a href="#cb7-13"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">"Elapsed time = "</span> <span class="op">&lt;&lt;</span> chrono<span class="op">::</span>duration<span class="op">&lt;</span><span class="dt">double</span><span class="op">,</span> milli<span class="op">&gt;(</span>diff<span class="op">).</span>count<span class="op">()</span> <span class="op">&lt;&lt;</span> <span class="st">" ms"</span> <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
 <span id="cb7-14"><a href="#cb7-14"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;}</span></span>
-<span id="cb7-15"><a href="#cb7-15"></a><span class="co">/*C++でのfor文処理時間:0.224624秒*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-15"><a href="#cb7-15"></a><span class="co">/*処理時間:0.224624秒*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="おまけcの実行方法" class="slide level2">
 <h2>おまけ:C++の実行方法</h2>

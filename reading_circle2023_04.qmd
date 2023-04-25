@@ -23,6 +23,7 @@ format:
 
 実行環境<br>
 3 GHz 6コアIntel Core i5、メモリ:32G
+
 [python3.10.10](https://docs.python.org/3.10/)<br>
 
 
