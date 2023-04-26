@@ -1,11 +1,13 @@
 ---
-title: "slide"
+title: "About Me"
 ---
+**鈴木優太**
 
-## test
+**Mail**<br>
+yuta.suzuki.t2あdc.tohoku.ac.jp(あを@に変えてください)
 
-test for slide page
-
+**Link**<br>
+[GitHub](https://github.com/YutaSSuzuki)<br>
 [slide](reading_circle2023_04.qmd)
 
-#https://yutassuzuki.github.io/slide/
+
