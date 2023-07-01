@@ -8,6 +8,6 @@ yuta.suzuki.t2あdc.tohoku.ac.jp(あを@に変えてください)
 
 **Link**<br>
 [GitHub](https://github.com/YutaSSuzuki)<br>
-[slide](reading_circle2023_04.qmd)
+[code speed-up slide](reading_circle/reading_circle2023_04.qmd)
 
 
