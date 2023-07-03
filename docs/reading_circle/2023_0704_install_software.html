@@ -407,12 +407,13 @@
 <h2>はじめに</h2>
 <p><strong>ソフトウェアのインストールは公式で推奨された方法を<br>
 可能な限り使ってください</strong></p>
-<p>実行環境</p>
+<p><br></p>
+<p>実行環境<br></p>
 <ul>
 <li>macOS Monterey 12.6.6</li>
 <li>gcc 13.1.0</li>
 </ul>
-<p>参考文献</p>
+<p>参考文献<br></p>
 <ul>
 <li><a href="https://brew.sh/index_ja">Homebrew公式サイト</a></li>
 <li><a href="https://heavywatal.github.io/about.html">メタルさんサイト</a></li>
@@ -454,7 +455,8 @@
 <section id="インストールってなに" class="slide level2">
 <h2>インストールってなに？</h2>
 <p>ソフトウェアをパソコンへ導入し、使用可能な状態にする処理や作業のこと</p>
-<p>ソフトウェアのインストールには2種の方法がある</p>
+<p><br></p>
+<p>ソフトウェアのインストールには2種の方針がある<br></p>
 <ul>
 <li>ソースコードからソフトウェアを構築する<br>
 （ソースからビルド）</li>
@@ -519,7 +521,7 @@
 <ol type="1">
 <li>pythonコードのダウンロード</li>
 </ol>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># 今回はすでに終わっています。</span></span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#今回はすでに終わっています。</span></span>
 <span id="cb6-2"><a href="#cb6-2"></a><span class="co">#git clone https://github.com/YutaSSuzuki/install_practice.git</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
 <li>パスを通す</li>
@@ -544,15 +546,18 @@
 <li>作成側とインストール側の両方でCMakeのインストールが必要</li>
 </ul>
 <p>使用時は空のディレクトリを作成し、その中で実行する</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">mkdir</span> build</span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">cmake</span> <span class="op">&lt;</span>CMakeLists.txtが配置されたディレクトリ<span class="op">&gt;</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="fu">make</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">mkdir</span> build </span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="bu">cd</span> build</span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="fu">cmake</span> <span class="op">&lt;</span>CMakeLists.txtが配置されたディレクトリ<span class="op">&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="fu">make</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="パッケージマネージャーとは" class="slide level2">
 <h2>パッケージマネージャーとは？</h2>
 <p>ソフトウェアのインストールやバージョン管理を行う<br>
-ソフトのこと<br>
-（Homebrew,Anaconda,pip3など）</p>
+ソフトのこと</p>
+<p><br></p>
+<p>Homebrew、condaなどはその代表例</p>
+<p><br></p>
 <p>以下の利点がある</p>
 <ul>
 <li>インストールをコマンド１つで行える</li>
@@ -563,10 +568,9 @@
 <section id="homebrewって何" class="slide level2">
 <h2><a href="https://brew.sh/index_ja">Homebrew</a>って何？</h2>
 <p>MacOS、Linux用のパッケージマネージャー</p>
-<p>Github上に公式が公開しているリポジトリから<br>
-ソフトウェアをインストールできる。</p>
+<p>公式が公開したものだけでなく、個人が公開した<br>ソフトウェアもインストールできる</p>
 <ul>
-<li>インストール</li>
+<li>ソフトウェアのインストール</li>
 </ul>
 <div class="sourceCode" id="cb10"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="ex">brew</span> install <span class="op">&lt;</span>ソフト名<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
@@ -580,17 +584,16 @@
 </section>
 <section id="便利機能" class="slide level2">
 <h2>便利機能</h2>
-<h3 id="bottle"><code>bottle</code></h3>
+<h3 id="bottle">bottle</h3>
 <p>バイナリーデータを直接ダウンロードする。</p>
 <p>以下の条件下で使用できなくなるので注意</p>
 <ul>
 <li>MacOSのバージョンが対応していない</li>
 <li>Homebrewがデフォルトの場所にインストールされてい</li>
 </ul>
-<h3 id="tap"><code>tap</code></h3>
-<p>Github上にアップロードされている公式以外の<br>
-リポジトリのソフトをインストールできる。</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a><span class="ex">brew</span> install <span class="op">&lt;</span>githubユーザー名<span class="op">&gt;</span>/<span class="op">&lt;</span>リポジトリ名<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 id="cask">cask</h3>
+<p>GUIのソフトウェアをインストールできる。<br> 例）Rstudio</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> rstudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="インストール時のエラー対応" class="slide level2">
 <h2>インストール時のエラー対応</h2>

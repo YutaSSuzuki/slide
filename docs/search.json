@@ -179,7 +179,7 @@
     "href": "reading_circle/2023_0704_install_software.html#はじめに",
     "title": "インストール概要",
     "section": "はじめに",
-    "text": "はじめに\nソフトウェアのインストールは公式で推奨された方法を\n可能な限り使ってください\n実行環境\n\nmacOS Monterey 12.6.6\ngcc 13.1.0\n\n参考文献\n\nHomebrew公式サイト\nメタルさんサイト"
+    "text": "はじめに\nソフトウェアのインストールは公式で推奨された方法を\n可能な限り使ってください\n\n実行環境\n\nmacOS Monterey 12.6.6\ngcc 13.1.0\n\n参考文献\n\nHomebrew公式サイト\nメタルさんサイト"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#環境構築は大変",
@@ -214,7 +214,7 @@
     "href": "reading_circle/2023_0704_install_software.html#インストールってなに",
     "title": "インストール概要",
     "section": "インストールってなに？",
-    "text": "インストールってなに？\nソフトウェアをパソコンへ導入し、使用可能な状態にする処理や作業のこと\nソフトウェアのインストールには2種の方法がある\n\nソースコードからソフトウェアを構築する\n（ソースからビルド）\nパッケージマネージャーを使用する\n（Homebrew,condaなど）"
+    "text": "インストールってなに？\nソフトウェアをパソコンへ導入し、使用可能な状態にする処理や作業のこと\n\nソフトウェアのインストールには2種の方針がある\n\nソースコードからソフトウェアを構築する\n（ソースからビルド）\nパッケージマネージャーを使用する\n（Homebrew,condaなど）"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#ソースコードからのインストール",
@@ -242,35 +242,35 @@
     "href": "reading_circle/2023_0704_install_software.html#インタプリタ言語インストール体験",
     "title": "インストール概要",
     "section": "インタプリタ言語インストール体験",
-    "text": "インタプリタ言語インストール体験\n\npythonコードのダウンロード\n\n# 今回はすでに終わっています。\n#git clone https://github.com/YutaSSuzuki/install_practice.git\n\nパスを通す\n\ncd ../interpreter\npwd #出力結果をコピー\nnano ~/.zshrc #shellの種類に応じて_の前を変更\n\n# zshrc内の一番下の行に以下の内容を追記\nexport PATH=\"コピー内容をペースト:$PATH\"\nsource ~/.zshrc\nプログラムの実行\nprime.py\n\n🔰 好きな整数を半角で入力し、素数判定を行う\n🔰 ディレクトリを移動しprime.pyを実行しよう"
+    "text": "インタプリタ言語インストール体験\n\npythonコードのダウンロード\n\n#今回はすでに終わっています。\n#git clone https://github.com/YutaSSuzuki/install_practice.git\n\nパスを通す\n\ncd ../interpreter\npwd #出力結果をコピー\nnano ~/.zshrc #shellの種類に応じて_の前を変更\n\n# zshrc内の一番下の行に以下の内容を追記\nexport PATH=\"コピー内容をペースト:$PATH\"\nsource ~/.zshrc\nプログラムの実行\nprime.py\n\n🔰 好きな整数を半角で入力し、素数判定を行う\n🔰 ディレクトリを移動しprime.pyを実行しよう"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#余談新しいmakefile作成cmake",
     "href": "reading_circle/2023_0704_install_software.html#余談新しいmakefile作成cmake",
     "title": "インストール概要",
     "section": "余談：新しいMakefile作成CMake",
-    "text": "余談：新しいMakefile作成CMake\n\n高速\n作成側とインストール側の両方でCMakeのインストールが必要\n\n使用時は空のディレクトリを作成し、その中で実行する\nmkdir build\ncmake &lt;CMakeLists.txtが配置されたディレクトリ&gt;\nmake"
+    "text": "余談：新しいMakefile作成CMake\n\n高速\n作成側とインストール側の両方でCMakeのインストールが必要\n\n使用時は空のディレクトリを作成し、その中で実行する\nmkdir build \ncd build\ncmake &lt;CMakeLists.txtが配置されたディレクトリ&gt;\nmake"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#パッケージマネージャーとは",
     "href": "reading_circle/2023_0704_install_software.html#パッケージマネージャーとは",
     "title": "インストール概要",
     "section": "パッケージマネージャーとは？",
-    "text": "パッケージマネージャーとは？\nソフトウェアのインストールやバージョン管理を行う\nソフトのこと\n（Homebrew,Anaconda,pip3など）\n以下の利点がある\n\nインストールをコマンド１つで行える\nアップデートの際、ソフトを入れ直す必要がない\nインストールに必要なものを全て入れてくれる"
+    "text": "パッケージマネージャーとは？\nソフトウェアのインストールやバージョン管理を行う\nソフトのこと\n\nHomebrew、condaなどはその代表例\n\n以下の利点がある\n\nインストールをコマンド１つで行える\nアップデートの際、ソフトを入れ直す必要がない\nインストールに必要なものを全て入れてくれる"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#homebrewって何",
     "href": "reading_circle/2023_0704_install_software.html#homebrewって何",
     "title": "インストール概要",
     "section": "Homebrewって何？",
-    "text": "Homebrewって何？\nMacOS、Linux用のパッケージマネージャー\nGithub上に公式が公開しているリポジトリから\nソフトウェアをインストールできる。\n\nインストール\n\nbrew install &lt;ソフト名&gt;\n\nインストールしたソフトの一覧表示\n\nbrew list \n\nHomebrewで入れたソフトのアップデート\n\nbrew update"
+    "text": "Homebrewって何？\nMacOS、Linux用のパッケージマネージャー\n公式が公開したものだけでなく、個人が公開したソフトウェアもインストールできる\n\nソフトウェアのインストール\n\nbrew install &lt;ソフト名&gt;\n\nインストールしたソフトの一覧表示\n\nbrew list \n\nHomebrewで入れたソフトのアップデート\n\nbrew update"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#便利機能",
     "href": "reading_circle/2023_0704_install_software.html#便利機能",
     "title": "インストール概要",
     "section": "便利機能",
-    "text": "便利機能\nbottle\nバイナリーデータを直接ダウンロードする。\n以下の条件下で使用できなくなるので注意\n\nMacOSのバージョンが対応していない\nHomebrewがデフォルトの場所にインストールされてい\n\ntap\nGithub上にアップロードされている公式以外の\nリポジトリのソフトをインストールできる。\nbrew install &lt;githubユーザー名&gt;/&lt;リポジトリ名&gt;"
+    "text": "便利機能\nbottle\nバイナリーデータを直接ダウンロードする。\n以下の条件下で使用できなくなるので注意\n\nMacOSのバージョンが対応していない\nHomebrewがデフォルトの場所にインストールされてい\n\ncask\nGUIのソフトウェアをインストールできる。 例）Rstudio\nbrew install --cask rstudio"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#インストール時のエラー対応",

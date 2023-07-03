@@ -15,14 +15,14 @@ css: style.css
 **ソフトウェアのインストールは公式で推奨された方法を    
 可能な限り使ってください**  
 
+<br>
 
-
-実行環境
+実行環境<br>
 
 * macOS Monterey 12.6.6
 * gcc 13.1.0
 
-参考文献
+参考文献<br>
 
 * [Homebrew公式サイト](https://brew.sh/index_ja)
 * [メタルさんサイト](https://heavywatal.github.io/about.html)
@@ -73,12 +73,15 @@ css: style.css
 
 ソフトウェアをパソコンへ導入し、使用可能な状態にする処理や作業のこと
 
-ソフトウェアのインストールには2種の方法がある
+<br>
+
+ソフトウェアのインストールには2種の方針がある<br>
 
 * ソースコードからソフトウェアを構築する  
 （ソースからビルド）
 * パッケージマネージャーを使用する  
 （Homebrew,condaなど）
+
 
 ## ソースコードからのインストール
 
@@ -136,7 +139,7 @@ prime
 
 1. pythonコードのダウンロード
 ```sh
-# 今回はすでに終わっています。
+#今回はすでに終わっています。
 #git clone https://github.com/YutaSSuzuki/install_practice.git
 ```
 
@@ -170,7 +173,8 @@ prime.py
 使用時は空のディレクトリを作成し、その中で実行する
 
 ```sh
-mkdir build
+mkdir build 
+cd build
 cmake <CMakeLists.txtが配置されたディレクトリ>
 make
 ```
@@ -179,7 +183,12 @@ make
 
 ソフトウェアのインストールやバージョン管理を行う  
 ソフトのこと  
-（Homebrew,Anaconda,pip3など）
+
+<br>
+
+Homebrew、condaなどはその代表例
+
+<br>
 
 以下の利点がある
 
@@ -187,14 +196,15 @@ make
 * アップデートの際、ソフトを入れ直す必要がない
 * インストールに必要なものを全て入れてくれる
 
+
+
 ## [Homebrew](https://brew.sh/index_ja)って何？
 
 MacOS、Linux用のパッケージマネージャー  
 
-Github上に公式が公開しているリポジトリから  
-ソフトウェアをインストールできる。
+公式が公開したものだけでなく、個人が公開した<br>ソフトウェアもインストールできる
 
-* インストール
+* ソフトウェアのインストール
 
 ```sh
 brew install <ソフト名>
@@ -214,7 +224,7 @@ brew update
 
 ## 便利機能
 
-### `bottle`
+### bottle
 
 バイナリーデータを直接ダウンロードする。
 
@@ -223,13 +233,13 @@ brew update
 * MacOSのバージョンが対応していない
 * Homebrewがデフォルトの場所にインストールされてい
 
-### `tap`
+### cask
 
-Github上にアップロードされている公式以外の  
-リポジトリのソフトをインストールできる。
+GUIのソフトウェアをインストールできる。<br>
+例）Rstudio
 
 ```sh
-brew install <githubユーザー名>/<リポジトリ名>
+brew install --cask rstudio
 ```
 
 ## インストール時のエラー対応

@@ -1,0 +1,22 @@
+h2:before {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 20%;
+  height: 1px;
+  content: '';
+  background: #444;
+}
+
+.title {
+  text-align: center;
+  padding-left: 1rem;
+}
+
+.reveal p {
+  line-height: 1 !important;
+}
+
+img {
+  margin-top: 0px !important;
+}
