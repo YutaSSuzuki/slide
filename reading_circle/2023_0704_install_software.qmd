@@ -1,5 +1,5 @@
 ---
-title: "ソフトインストール概要理解"
+title: "インストール概要"
 subtitle: "ソースからって何？brewって何がいいの？"
 author: "鈴木優太"
 format: 
@@ -29,14 +29,13 @@ css: style.css
 
 ## 環境構築は大変
 
-理想的な研究  
-![](image/ideal_research.png){width="800"}
+理想的な研究 <span style="font-size:50%">出典:いらすとや、[Homebrew](https://brew.sh/index_ja)</span>
+<br>
+![](image/ideal_research.png){height="220"}
 
 現実の研究
-
-![](image/real_research.png){width="800"}<br>
-<span style="font-size:50%">出典:いらすとや、[Homebrew](https://brew.sh/index_ja)</span>
-
+<br>
+![](image/real_research.png){height="220"}
 
 
 # 事前知識
@@ -46,9 +45,9 @@ css: style.css
 
 ## 人とパソコンは言語が違う
 
-![](image/human_hello.png){width="600"}
+![](image/human_hello.png){width="500"}
 
-![](image/pc_hello.png){width="600"}
+![](image/pc_hello.png){width="500"}
 
 パソコンが理解できるデータを**バイナリーデータ**と言う
 
@@ -56,25 +55,25 @@ css: style.css
 
 ![](image/intractive.png){width="1000"}
 
-プログラムを翻訳する操作を**コンパイル**とよぶ
+プログラムを翻訳する操作を**コンパイル**とよぶ。
 
 ## コンパイルの扱いは言語ごとに違う
 
 * コンパイル言語（Go、C++、Java）  
 一度コンパイルしたファイルを使い回す
-![](image/compile_language.png){width="900"}  
+![](image/compile_language.png){width="700"}  
 
 
 
 * インタプリタ言語（Python、R、Javascript）  
 実行するたびにコンパイルする
-![](image/interprinter.png){width="900"}  
+![](image/interprinter.png){width="700"}  
 
 ## インストールってなに？
 
 ソフトウェアをパソコンへ導入し、使用可能な状態にする処理や作業のこと
 
-ソフトウェアのインストールには大きくわけて2種の方法がある
+ソフトウェアのインストールには2種の方法がある
 
 * ソースコードからソフトウェアを構築する  
 （ソースからビルド）
@@ -115,16 +114,19 @@ make
 4. パスを通す:  
 ``` sh
 pwd #出力結果をコピー
-nano ~/zsh_profile #shellの種類に応じて_の前を変更
+nano ~/.zshrc #shellの種類に応じて_の前を変更
 
-# zsh_profile内の一番下の行に以下の内容を追記
-PATH="コピー内容をペースト:$PATH"
+# .zshrc内の一番下の行に以下の内容を追記
+export PATH="コピー内容をペースト:$PATH"
+
+source ~/.zshrc
 ```
-
+<br>
 プログラムの実行  
 ``` sh
 prime
 ```
+<br>
 
 🔰 好きな整数を半角で入力し、素数判定を行う  
 🔰 ディレクトリを移動し`prime`を実行しよう
@@ -134,35 +136,44 @@ prime
 
 1. pythonコードのダウンロード
 ```sh
-git clone
+# 今回はすでに終わっています。
+#git clone https://github.com/YutaSSuzuki/install_practice.git
 ```
 
 2. パスを通す
 ```sh
-cd interpreter/
+cd ../interpreter
 pwd #出力結果をコピー
-nano ~/zsh_profile #shellの種類に応じて_の前を変更
+nano ~/.zshrc #shellの種類に応じて_の前を変更
 
-# zsh_profile内の一番下の行に以下の内容を追記
-PATH="コピー内容をペースト:$PATH"
-
+# zshrc内の一番下の行に以下の内容を追記
+export PATH="コピー内容をペースト:$PATH"
+source ~/.zshrc
 ```
 プログラムの実行  
 ``` sh
 prime.py
 ```
+
+<br>
+
 🔰 好きな整数を半角で入力し、素数判定を行う  
 🔰 ディレクトリを移動し`prime.py`を実行しよう
 
-## 余談：新しいコンパイルcmake
+## 余談：新しい`Makefile`作成CMake
 
-これまでは`configure`で環境を読み取り、Makefileを作るのが一般的だった。  
-しかし最近は`cmake`を活用したMakefileの作成が主流
 
-cmakeの特徴として以下のものが挙げられる
 
 * 高速
-* 作成側とインストール側の両方でcmakeのインストールが必要
+* 作成側とインストール側の両方でCMakeのインストールが必要
+
+使用時は空のディレクトリを作成し、その中で実行する
+
+```sh
+mkdir build
+cmake <CMakeLists.txtが配置されたディレクトリ>
+make
+```
 
 ## パッケージマネージャーとは？
 
@@ -218,7 +229,7 @@ Github上にアップロードされている公式以外の
 リポジトリのソフトをインストールできる。
 
 ```sh
-brew install <github_user_name>/tap/<soft_name>
+brew install <githubユーザー名>/<リポジトリ名>
 ```
 
 ## インストール時のエラー対応

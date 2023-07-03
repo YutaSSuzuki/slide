@@ -6,8 +6,9 @@ title: "About Me"
 **Mail**<br>
 yuta.suzuki.t2あdc.tohoku.ac.jp(あを@に変えてください)
 
-**Link**<br>
-[GitHub](https://github.com/YutaSSuzuki)<br>
-[code speed-up slide](reading_circle/reading_circle2023_04.qmd)
-[soft install slide](reading_circle/ダミー.qmd)
+**Link**
+
+- [GitHub](https://github.com/YutaSSuzuki)<br>
+- [code speed-up slide](reading_circle/reading_circle2023_04.html)
+- [soft install slide](reading_circle/2023_0704_install_software.html)
 

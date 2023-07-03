@@ -4,8 +4,8 @@ author: "鈴木優太"
 format: 
   revealjs:
     highlight-style: github
-    theme: static/theme.css
     slide-number: c/t
+css: static/theme.css
 ---
 
 ## 処理の高速化をする４つの方法
