@@ -1,7 +1,23 @@
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Yu Gothic UI", "Noto Sans",
+Helvetica, Arial, sans-serif, system-ui, "Segoe UI", "Hiragino Sans", "Meiryo" !default;
+$presentation-font-size-root: 24px !default;
+$presentation-line-height: 1.4 !default;
+$presentation-h1-font-size: 1.75em !default;
+$presentation-h2-font-size: 1.35em !default;
+$presentation-h3-font-size: 1.25em !default;
+$presentation-h4-font-size: 1.15em !default;
+
+
+/*-- scss:rules --*/
+
+
 h2 {
   position: relative;
-  padding-bottom: 0.5em !important;
-  margin-bottom: 1em !important;
+  padding-bottom: 0.1em !important;
+  margin-bottom: 1rem !important;
   border-bottom: 1px solid #ccc;
 }
 
@@ -14,6 +30,12 @@ h2:before {
   content: '';
   background: #444;
 }
+
+ol {
+  margin-bottom: 0 !important; 
+}
+
+
 
 code {
   font-size: 0.875em;
@@ -37,6 +59,10 @@ pre code {
 .title {
   text-align: center;
   padding-left: 1rem;
+}
+
+.sourceCode {
+  margin-bottom: 3;
 }
 
 .reveal p {

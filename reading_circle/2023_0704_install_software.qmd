@@ -6,7 +6,8 @@ format:
   revealjs:
     highlight-style: github
     slide-number: c/t
-css: style.css
+    scrollable: true
+    theme: style.css
 ---
 
 ## はじめに
@@ -31,29 +32,29 @@ css: style.css
 
 理想的な研究 <span style="font-size:50%">出典:いらすとや、[Homebrew](https://brew.sh/index_ja)</span>
 <br>
-![](image/ideal_research.png){height="220"}
+![](image/ideal_research.png){height="250"}
 
 現実の研究
 <br>
-![](image/real_research.png){height="220"}
+![](image/real_research.png){height="250"}
 
 
-# 事前知識
+## 事前知識
 
 * バイナリーデータ
 * コンパイル
 
 ## 人とパソコンは言語が違う
 
-![](image/human_hello.png){width="500"}
+![](image/human_hello.png){width="600"}
 
-![](image/pc_hello.png){width="500"}
+![](image/pc_hello.png){width="600"}
 
 パソコンが理解できるデータを**バイナリーデータ**と言う
 
 ## プログラムは翻訳され実行される
 
-![](image/intractive.png){width="1000"}
+![](image/intractive.png){height="250"}
 
 プログラムを翻訳する操作を**コンパイル**とよぶ。
 
@@ -61,13 +62,13 @@ css: style.css
 
 * コンパイル言語（Go、C++、Java）  
 一度コンパイルしたファイルを使い回す
-![](image/compile_language.png){width="700"}  
+![](image/compile_language.png){width="800"}  
 
 
 
 * インタプリタ言語（Python、R、Javascript）  
 実行するたびにコンパイルする
-![](image/interprinter.png){width="700"}  
+![](image/interprinter.png){width="800"}  
 
 ## インストールってなに？
 
@@ -102,19 +103,19 @@ css: style.css
 ``` sh
 git clone https://github.com/YutaSSuzuki/install_practice.git
 ```
-2. コンパイル用のファイル（Makefile）を作成：  
+2. コンパイル用のファイル（Makefile）を作成
 ``` sh
 cd compile
 ./configure
  ```
-3. コンパイル実行（実行ファイルを作成）:  
+3. コンパイル実行（実行ファイルを作成）
 ``` sh
 make
 ```
 
 
 ## コンパイル言語インストール体験
-4. パスを通す:  
+4. パスを通す
 ``` sh
 pwd #出力結果をコピー
 nano ~/.zshrc #shellの種類に応じて_の前を変更
@@ -124,8 +125,8 @@ export PATH="コピー内容をペースト:$PATH"
 
 source ~/.zshrc
 ```
-<br>
-プログラムの実行  
+
+5. プログラムの実行  
 ``` sh
 prime
 ```
@@ -153,7 +154,7 @@ nano ~/.zshrc #shellの種類に応じて_の前を変更
 export PATH="コピー内容をペースト:$PATH"
 source ~/.zshrc
 ```
-プログラムの実行  
+3. プログラムの実行  
 ``` sh
 prime.py
 ```
@@ -235,8 +236,7 @@ brew update
 
 ### cask
 
-GUIのソフトウェアをインストールできる。<br>
-例）Rstudio
+RstudioなどのGUIのソフトウェアをインストールできる。
 
 ```sh
 brew install --cask rstudio

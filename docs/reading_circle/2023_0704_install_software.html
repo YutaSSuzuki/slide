@@ -96,7 +96,6 @@
     code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
-  <link rel="stylesheet" href="style.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -309,6 +308,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -421,12 +421,11 @@
 </section>
 <section id="環境構築は大変" class="slide level2">
 <h2>環境構築は大変</h2>
-<p>理想的な研究 <span style="font-size:50%">出典:いらすとや、<a href="https://brew.sh/index_ja">Homebrew</a></span> <br> <img data-src="image/ideal_research.png" height="220"></p>
-<p>現実の研究 <br> <img data-src="image/real_research.png" height="220"></p>
+<p>理想的な研究 <span style="font-size:50%">出典:いらすとや、<a href="https://brew.sh/index_ja">Homebrew</a></span> <br> <img data-src="image/ideal_research.png" height="250"></p>
+<p>現実の研究 <br> <img data-src="image/real_research.png" height="250"></p>
 </section>
-<section>
-<section id="事前知識" class="title-slide slide level1 center">
-<h1>事前知識</h1>
+<section id="事前知識" class="slide level2">
+<h2>事前知識</h2>
 <ul>
 <li>バイナリーデータ</li>
 <li>コンパイル</li>
@@ -434,22 +433,22 @@
 </section>
 <section id="人とパソコンは言語が違う" class="slide level2">
 <h2>人とパソコンは言語が違う</h2>
-<p><img data-src="image/human_hello.png" width="500"></p>
-<p><img data-src="image/pc_hello.png" width="500"></p>
+<p><img data-src="image/human_hello.png" width="600"></p>
+<p><img data-src="image/pc_hello.png" width="600"></p>
 <p>パソコンが理解できるデータを<strong>バイナリーデータ</strong>と言う</p>
 </section>
 <section id="プログラムは翻訳され実行される" class="slide level2">
 <h2>プログラムは翻訳され実行される</h2>
-
-<img data-src="image/intractive.png" width="1000" class="r-stretch"><p>プログラムを翻訳する操作を<strong>コンパイル</strong>とよぶ。</p>
+<p><img data-src="image/intractive.png" height="250"></p>
+<p>プログラムを翻訳する操作を<strong>コンパイル</strong>とよぶ。</p>
 </section>
 <section id="コンパイルの扱いは言語ごとに違う" class="slide level2">
 <h2>コンパイルの扱いは言語ごとに違う</h2>
 <ul>
 <li><p>コンパイル言語（Go、C++、Java）<br>
-一度コンパイルしたファイルを使い回す <img data-src="image/compile_language.png" width="700"></p></li>
+一度コンパイルしたファイルを使い回す <img data-src="image/compile_language.png" width="800"></p></li>
 <li><p>インタプリタ言語（Python、R、Javascript）<br>
-実行するたびにコンパイルする <img data-src="image/interprinter.png" width="700"></p></li>
+実行するたびにコンパイルする <img data-src="image/interprinter.png" width="800"></p></li>
 </ul>
 </section>
 <section id="インストールってなに" class="slide level2">
@@ -486,22 +485,19 @@
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">git</span> clone https://github.com/YutaSSuzuki/install_practice.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
-<li>コンパイル用のファイル（Makefile）を作成：<br>
-</li>
+<li>コンパイル用のファイル（Makefile）を作成</li>
 </ol>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="bu">cd</span> compile</span>
 <span id="cb2-2"><a href="#cb2-2"></a><span class="ex">./configure</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="3" type="1">
-<li>コンパイル実行（実行ファイルを作成）:<br>
-</li>
+<li>コンパイル実行（実行ファイルを作成）</li>
 </ol>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">make</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="コンパイル言語インストール体験-1" class="slide level2">
 <h2>コンパイル言語インストール体験</h2>
 <ol start="4" type="1">
-<li>パスを通す:<br>
-</li>
+<li>パスを通す</li>
 </ol>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="bu">pwd</span> <span class="co">#出力結果をコピー</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a><span class="fu">nano</span> ~/.zshrc <span class="co">#shellの種類に応じて_の前を変更</span></span>
@@ -510,7 +506,10 @@
 <span id="cb4-5"><a href="#cb4-5"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span><span class="st">"コピー内容をペースト:</span><span class="va">$PATH</span><span class="st">"</span></span>
 <span id="cb4-6"><a href="#cb4-6"></a></span>
 <span id="cb4-7"><a href="#cb4-7"></a><span class="bu">source</span> ~/.zshrc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br> プログラムの実行</p>
+<ol start="5" type="1">
+<li>プログラムの実行<br>
+</li>
+</ol>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">prime</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 <p>🔰 好きな整数を半角で入力し、素数判定を行う<br>
@@ -533,7 +532,10 @@
 <span id="cb7-5"><a href="#cb7-5"></a><span class="co"># zshrc内の一番下の行に以下の内容を追記</span></span>
 <span id="cb7-6"><a href="#cb7-6"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span><span class="st">"コピー内容をペースト:</span><span class="va">$PATH</span><span class="st">"</span></span>
 <span id="cb7-7"><a href="#cb7-7"></a><span class="bu">source</span> ~/.zshrc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>プログラムの実行</p>
+<ol start="3" type="1">
+<li>プログラムの実行<br>
+</li>
+</ol>
 <div class="sourceCode" id="cb8"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a><span class="ex">prime.py</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 <p>🔰 好きな整数を半角で入力し、素数判定を行う<br>
@@ -592,7 +594,7 @@
 <li>Homebrewがデフォルトの場所にインストールされてい</li>
 </ul>
 <h3 id="cask">cask</h3>
-<p>GUIのソフトウェアをインストールできる。<br> 例）Rstudio</p>
+<p>RstudioなどのGUIのソフトウェアをインストールできる。</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> rstudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="インストール時のエラー対応" class="slide level2">
@@ -622,7 +624,7 @@
 <div class="footer footer-default">
 
 </div>
-</section></section>
+</section>
     </div>
   </div>
 

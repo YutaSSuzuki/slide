@@ -228,21 +228,21 @@
     "href": "reading_circle/2023_0704_install_software.html#コンパイル言語インストール体験",
     "title": "インストール概要",
     "section": "コンパイル言語インストール体験",
-    "text": "コンパイル言語インストール体験\n\nソースコードのダウンロード\n\ngit clone https://github.com/YutaSSuzuki/install_practice.git\n\nコンパイル用のファイル（Makefile）を作成：\n\n\ncd compile\n./configure\n\nコンパイル実行（実行ファイルを作成）:\n\n\nmake"
+    "text": "コンパイル言語インストール体験\n\nソースコードのダウンロード\n\ngit clone https://github.com/YutaSSuzuki/install_practice.git\n\nコンパイル用のファイル（Makefile）を作成\n\ncd compile\n./configure\n\nコンパイル実行（実行ファイルを作成）\n\nmake"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#コンパイル言語インストール体験-1",
     "href": "reading_circle/2023_0704_install_software.html#コンパイル言語インストール体験-1",
     "title": "インストール概要",
     "section": "コンパイル言語インストール体験",
-    "text": "コンパイル言語インストール体験\n\nパスを通す:\n\n\npwd #出力結果をコピー\nnano ~/.zshrc #shellの種類に応じて_の前を変更\n\n# .zshrc内の一番下の行に以下の内容を追記\nexport PATH=\"コピー内容をペースト:$PATH\"\n\nsource ~/.zshrc\n プログラムの実行\nprime\n\n🔰 好きな整数を半角で入力し、素数判定を行う\n🔰 ディレクトリを移動しprimeを実行しよう"
+    "text": "コンパイル言語インストール体験\n\nパスを通す\n\npwd #出力結果をコピー\nnano ~/.zshrc #shellの種類に応じて_の前を変更\n\n# .zshrc内の一番下の行に以下の内容を追記\nexport PATH=\"コピー内容をペースト:$PATH\"\n\nsource ~/.zshrc\n\nプログラムの実行\n\n\nprime\n\n🔰 好きな整数を半角で入力し、素数判定を行う\n🔰 ディレクトリを移動しprimeを実行しよう"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#インタプリタ言語インストール体験",
     "href": "reading_circle/2023_0704_install_software.html#インタプリタ言語インストール体験",
     "title": "インストール概要",
     "section": "インタプリタ言語インストール体験",
-    "text": "インタプリタ言語インストール体験\n\npythonコードのダウンロード\n\n#今回はすでに終わっています。\n#git clone https://github.com/YutaSSuzuki/install_practice.git\n\nパスを通す\n\ncd ../interpreter\npwd #出力結果をコピー\nnano ~/.zshrc #shellの種類に応じて_の前を変更\n\n# zshrc内の一番下の行に以下の内容を追記\nexport PATH=\"コピー内容をペースト:$PATH\"\nsource ~/.zshrc\nプログラムの実行\nprime.py\n\n🔰 好きな整数を半角で入力し、素数判定を行う\n🔰 ディレクトリを移動しprime.pyを実行しよう"
+    "text": "インタプリタ言語インストール体験\n\npythonコードのダウンロード\n\n#今回はすでに終わっています。\n#git clone https://github.com/YutaSSuzuki/install_practice.git\n\nパスを通す\n\ncd ../interpreter\npwd #出力結果をコピー\nnano ~/.zshrc #shellの種類に応じて_の前を変更\n\n# zshrc内の一番下の行に以下の内容を追記\nexport PATH=\"コピー内容をペースト:$PATH\"\nsource ~/.zshrc\n\nプログラムの実行\n\n\nprime.py\n\n🔰 好きな整数を半角で入力し、素数判定を行う\n🔰 ディレクトリを移動しprime.pyを実行しよう"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#余談新しいmakefile作成cmake",
@@ -270,7 +270,7 @@
     "href": "reading_circle/2023_0704_install_software.html#便利機能",
     "title": "インストール概要",
     "section": "便利機能",
-    "text": "便利機能\nbottle\nバイナリーデータを直接ダウンロードする。\n以下の条件下で使用できなくなるので注意\n\nMacOSのバージョンが対応していない\nHomebrewがデフォルトの場所にインストールされてい\n\ncask\nGUIのソフトウェアをインストールできる。 例）Rstudio\nbrew install --cask rstudio"
+    "text": "便利機能\nbottle\nバイナリーデータを直接ダウンロードする。\n以下の条件下で使用できなくなるので注意\n\nMacOSのバージョンが対応していない\nHomebrewがデフォルトの場所にインストールされてい\n\ncask\nRstudioなどのGUIのソフトウェアをインストールできる。\nbrew install --cask rstudio"
   },
   {
     "objectID": "reading_circle/2023_0704_install_software.html#インストール時のエラー対応",
@@ -292,5 +292,12 @@
     "title": "About Me",
     "section": "",
     "text": "鈴木優太\nMail yuta.suzuki.t2あdc.tohoku.ac.jp(あを@に変えてください)\nLink\n\nGitHub\ncode speed-up slide\nsoft install slide"
+  },
+  {
+    "objectID": "reading_circle/2023_0704_install_software.html#事前知識",
+    "href": "reading_circle/2023_0704_install_software.html#事前知識",
+    "title": "インストール概要",
+    "section": "事前知識",
+    "text": "事前知識\n\nバイナリーデータ\nコンパイル"
   }
 ]
